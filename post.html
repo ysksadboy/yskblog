@@ -85,104 +85,38 @@
               these sadistic games they subconsciously play, if that makes sense....
 
               College football has been on all day, so I'm going to cut this short and watch it, really because I have
-              nothing to write right now, so yeah.
-            </p>
-            <a href="index.html" class="btn btn-dark">
-              <i class="fas fa-chevron"></i>
-              Home
-            </a>
-          </div>
-        </div>
-      </div>
-    </article>
+              nothing to write right now, so yeah.</p>
 
-    <article class="flex-columns flex-reverse">
-      <div class="row">
-        <div class="column">
-          <div class="column-1">
-            <img src="images/blog/blog1.jpg" alt="" />
-          </div>
-        </div>
-        <div class="column">
-          <div class="column-2 bg-dark">
-            <h2>Day 64</h2>
-            <p class="meta">
-              <i class="fas fa-user"></i> Posted by
-              <strong>YSKSADBOY</strong> | May 16 2023
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-              illum, animi earum ea amet sequi reiciendis sit corporis sunt
-              iusto cupiditate odio maxime adipisci cumque eligendi nemo
-              dolore id itaque?
-            </p>
-            <a href="index.html" class="btn btn-light">
-              <i class="fas fa-chevron"></i>
-              Home
-            </a>
-          </div>
-        </div>
-      </div>
-    </article>
+            <footer class="footer bg-dark">
+              <div class="social">
+                <a href="https://twitter.com/ysksadboy97045"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.youtube.com/channel/UCFgO8vRh_36YhstKjPkdbgA"><i
+                    class="fab fa-youtube fa-2x"></i></a>
+              </div>
 
-    <article class="flex-columns">
-      <div class="row">
-        <div class="column">
-          <div class="column-1">
-            <img src="images/blog/blog1.jpg" alt="" />
-          </div>
-        </div>
-        <div class="column">
-          <div class="column-2 bg-light">
-            <h2>Day 63</h2>
-            <p class="meta">
-              <i class="fas fa-user"></i> Posted by
-              <strong>YSKSADBOY</strong> | May 16 2023
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-              illum, animi earum ea amet sequi reiciendis sit corporis sunt
-              iusto cupiditate odio maxime adipisci cumque eligendi nemo
-              dolore id itaque?
-            </p>
-            <a href="index.html" class="btn btn-dark">
-              <i class="fas fa-chevron"></i>
-              Home
-            </a>
-          </div>
-        </div>
-      </div>
-    </article>
-  </main>
+              <p>Copyright &copy; 2023 - YSKSADBOY</p>
+            </footer>
 
-  <footer class="footer bg-dark">
-    <div class="social">
-      <a href="https://twitter.com/ysksadboy97045"><i class="fab fa-twitter fa-2x"></i></a>
-      <a href="https://www.youtube.com/channel/UCFgO8vRh_36YhstKjPkdbgA"><i class="fab fa-youtube fa-2x"></i></a>
-    </div>
-    <p>Copyright &copy; 2023 - YSKSADBOY</p>
-  </footer>
+            <script>
+              const navbar = document.getElementById('navbar');
+              let scrolled = false;
 
-  <script>
-    const navbar = document.getElementById('navbar');
-    let scrolled = false;
-
-    window.onscroll = function () {
-      if (window.pageYOffset > 100) {
-        navbar.classList.remove('top');
-        if (!scrolled) {
-          navbar.style.transform = 'translateY(-70px)';
-        }
-        setTimeout(function () {
-          navbar.style.transform = 'translateY(0)';
-          scrolled = true;
-        }, 200);
-      } else {
-        navbar.classList.add('top');
-        scrolled = false;
-      }
-    };
-  </script>
+              window.onscroll = function () {
+                if (window.pageYOffset > 100) {
+                  navbar.classList.remove('top');
+                  if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                  }
+                  setTimeout(function () {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                  }, 200);
+                } else {
+                  navbar.classList.add('top');
+                  scrolled = false;
+                }
+              };
+            </script>
 </body>
 
 </html>
